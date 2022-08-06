@@ -1,1 +1,17 @@
-test
+instructions:
+1: sudo apt install waydroid (sfos: chum- install waydroid, waydroid-runner)
+2: Edit /etc/gbinder.d/anbox.conf to read like:
+
+[Protocol] 
+/dev/anbox-binder = aidl3 
+/dev/anbox-vndbinder = aidl3 
+/dev/anbox-hwbinder = hidl 
+ 
+[ServiceManager] 
+/dev/anbox-binder = aidl3 
+/dev/anbox-vndbinder = aidl3 
+/dev/anbox-hwbinder = hidl 
+
+3: copy waydroid images > /usr/share/waydroid-extras/images
+4: sudo waydroid init -f
+5: reboot
