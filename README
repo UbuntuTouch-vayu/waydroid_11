@@ -12,6 +12,6 @@ instructions:
 /dev/anbox-vndbinder = aidl3 
 /dev/anbox-hwbinder = hidl 
 
-3: copy waydroid images > /usr/share/waydroid-extras/images
+3: copy waydroid images > /usr/share/waydroid-extra/images
 4: sudo waydroid init -f
 5: reboot
